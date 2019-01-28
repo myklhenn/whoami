@@ -1,0 +1,14 @@
+# node.js libraries
+node_modules/
+
+# macos metadata
+.DS_Store
+
+# parcel-bundler cache
+.cache/
+
+# parcel-bundler output
+dist/
+
+# yarn log files
+yarn-error.log
