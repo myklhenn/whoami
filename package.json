@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.html",
   "repository": "https://github.com/myklhenn/whoami.git",
+  "homepage": "https://myklhenn.github.io/whoami",
   "author": "Michael Henning <mykl951@gmail.com>",
   "license": "MIT",
   "dependencies": {
