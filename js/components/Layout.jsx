@@ -11,12 +11,12 @@ import {
   List,
   Modal
 } from 'semantic-ui-react';
-import disLogo from '../../img/dis-logo.png';
-import lapseAnalyzerLogo from '../../img/la-screenshot.png';
-import nfpLogo from '../../img/nfp-logo.png';
-import profileImg from '../../img/profile-img.png';
-import roomDisplayLogo from '../../img/rd-logo.png';
-import wwuLogo from '../../img/wwu-logo.png';
+import disLogo from '../../img/dis-logo.jpg';
+import lapseAnalyzerLogo from '../../img/la-screenshot.jpg';
+import nfpLogo from '../../img/nfp-logo.jpg';
+import profileImg from '../../img/profile-img.jpg';
+import roomDisplayLogo from '../../img/rd-logo.jpg';
+import wwuLogo from '../../img/wwu-logo.jpg';
 
 export default class Layout extends React.Component {
   render() {
