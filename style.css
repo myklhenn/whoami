@@ -1,3 +1,8 @@
+.page-container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .title {
   font-family: 'Fira Mono', monospace;
   font-weight: normal;
