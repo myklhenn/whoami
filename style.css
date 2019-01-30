@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400,700');
+
 .page-container {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-
 .title {
   font-family: 'Fira Mono', monospace;
   font-weight: normal;
