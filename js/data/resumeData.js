@@ -19,7 +19,7 @@ export default {
   ],
   experience_list: [
     {
-      job_title: 'Full Stack Software Engineer',
+      job_title: 'Full Stack Software Engineering Intern',
       company: 'Dealer Information Systems (DIS) Corporation',
       time_range: 'January 2018 - September 2018',
       location: 'Bellingham, WA',
@@ -68,9 +68,10 @@ export default {
           ]
         },
         {
-          data: 'Assembled a device that ran the software mentioned above',
+          data:
+            'Assembled device containing a Raspberry Pi and a touch screen to run the software in a full-screen web browser',
           sub_details: [
-            'A Raspberry Pi connected to a touch screen running a full-screen web browser'
+            'Intended for installation near the entrances of conference rooms and faculty offices'
           ]
         }
       ]
