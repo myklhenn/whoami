@@ -6,7 +6,7 @@
   import Projects from './components/Projects.svelte';
   import Education from './components/Education.svelte';
 
-  import images from '../../img/*.jpg';
+  import images from '../img/*.jpg';
 
   export let resume;
 
