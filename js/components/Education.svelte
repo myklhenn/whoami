@@ -1,13 +1,12 @@
 <script>
-export let educations;
-export let images;
+  import SectionHeader from './SectionHeader.svelte';
+
+  export let educations;
+  export let images;
 </script>
 
 <section>
-  <h2 class="ui header">
-    <i class="graduation cap icon"></i>
-    <div class="content">Education</div>
-  </h2>
+  <SectionHeader icon="graduation cap" text="Education" />
   <div class="ui relaxed items">
     {#each educations as education}
       <div class="item">

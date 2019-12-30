@@ -1,4 +1,6 @@
 <script>
+  import SectionHeader from './SectionHeader.svelte';
+  import ItemLabel from './ItemLabel.svelte';
   import ItemDetails from './ItemDetails.svelte';
 
   export let projects;
@@ -6,10 +8,7 @@
 </script>
 
 <section>
-  <h2 class="ui header">
-    <i class="code icon"></i>
-    <div class="content">Projects</div>
-  </h2>
+  <SectionHeader icon="code" text="Projects" />
   <div class="ui relaxed items">
     {#each projects as project}
       <div class="item">
@@ -20,16 +19,15 @@
           <div class="header">{project.name}</div>
           <div class="extra">
             {#if project.time_range}
-              <div class="ui label">
-                <i class="calendar icon"></i>
-                {project.time_range}
-              </div>
+              <ItemLabel icon="calendar" text="{project.time_range}" />
             {/if}
             {#if project.video_id}
-              <a class="ui red label" href="https://www.youtube.com/watch?v={project.video_id}">
-                <i class="map {project.video_source} icon"></i>
-                Watch Video
-              </a>
+              <ItemLabel
+                link="https://www.youtube.com/watch?v={project.video_id}"
+                color="red"
+                icon="{project.video_source}"
+                text="Watch Video"
+              />
             {/if}
           </div>
           <div class="description">

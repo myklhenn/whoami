@@ -1,4 +1,6 @@
 <script>
+  import SectionHeader from './SectionHeader.svelte';
+  import ItemLabel from './ItemLabel.svelte';
   import ItemDetails from './ItemDetails.svelte';
 
   export let experiences;
@@ -6,10 +8,7 @@
 </script>
 
 <section>
-  <h2 class="ui header">
-    <i class="briefcase icon"></i>
-    <div class="content">Experience</div>
-  </h2>
+  <SectionHeader icon="briefcase" text="Experience" />
   <div class="ui relaxed items">
     {#each experiences as experience}
       <div class="item">
@@ -23,16 +22,10 @@
           </div>
           <div class="extra">
             {#if experience.time_range}
-              <div class="ui label">
-                <i class="calendar icon"></i>
-                {experience.time_range}
-              </div>
+              <ItemLabel icon="calendar" text="{experience.time_range}" />
             {/if}
             {#if experience.location}
-              <div class="ui label">
-                <i class="map marker icon"></i>
-                {experience.location}
-              </div>
+              <ItemLabel icon="map marker" text="{experience.location}" />
             {/if}
           </div>
           <div class="description">

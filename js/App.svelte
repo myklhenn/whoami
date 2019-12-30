@@ -1,5 +1,5 @@
 <script>
-  import Title from './components/Title.svelte';
+  import PageHeader from './components/PageHeader.svelte';
   import Objective from './components/Objective.svelte';
   import Links from './components/Links.svelte';
   import Experience from './components/Experience.svelte';
@@ -10,14 +10,24 @@
 
   export let resume;
 
-  const {
-    name,
-    objective,
-    links,
-    experience_list,
-    project_list,
-    education_list
-  } = resume;
+  const headerData = {
+    name: resume.name,
+    objective: resume.objective,
+    links: resume.links,
+    images
+  }
+  const experienceData = {
+    experiences: resume.experience_list,
+    images
+  }
+  const projectData = {
+    projects: resume.project_list,
+    images
+  }
+  const educationData = {
+    educations: resume.education_list,
+    images
+  }
 </script>
 
 <style>
@@ -28,19 +38,8 @@
 </style>
 
 <div class="ui container page-container">
-  <div class="ui stackable two column grid">
-    <div class="divided row">
-      <div class="eleven wide column">
-        <Title {name} />
-        <Objective {objective} />
-      </div>
-      <div class="five wide column">
-        <img class="ui tiny rounded image" src={images['profile-img']} alt="profile image" />
-        <Links {links} />
-      </div>
-    </div>
-  </div>
-  <Experience experiences={experience_list} {images} />
-  <Projects projects={project_list} {images} />
-  <Education educations={education_list} {images} />
+  <PageHeader {...headerData} />
+  <Experience {...experienceData} />
+  <Projects {...projectData} />
+  <Education {...educationData} />
 </div>
